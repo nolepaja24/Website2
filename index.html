@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeri Media Wow</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="hero">
+    <div class="overlay">
+      <h1>🎧 Selamat Datang di Galeri Media</h1>
+      <p class="subtitle">Nikmati koleksi audio, gambar, dan video dalam satu tampilan modern</p>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('audio')"><i class="fas fa-music"></i> Audio</button>
+    <button class="tab" onclick="showTab('gambar')"><i class="fas fa-image"></i> Gambar</button>
+    <button class="tab" onclick="showTab('video')"><i class="fas fa-film"></i> Video</button>
+  </div>
+
+  <div class="content">
+    <div id="audio" class="tab-content active">
+      <h2>🎵 Dengarkan Musik</h2>
+      <audio controls>
+        <source src="ASET/audio.mp3" type="audio/mpeg" />
+        Browser Anda tidak mendukung audio.
+      </audio>
+    </div>
+
+    <div id="gambar" class="tab-content">
+        <h2>🖼️ Galeri Grid</h2>
+      
+        <div class="grid-gallery">
+          <img src="ASET/image.jpg" alt="gambar 1" />
+          <img src="ASET/latar.jpg" alt="gambar 2" />
+          <img src="ASET/image3.jpg" alt="gambar 3" />
+          <img src="ASET/image4.jpg" alt="gambar 4" />
+          <img src="ASET/image5.jpg" alt="gambar 5" />
+          <img src="ASET/image6.jpg" alt="gambar 6" />
+        </div>
+      </div>
+      
+    <div id="video" class="tab-content">
+      <h2>🎬 Tonton Video</h2>
+      <video controls>
+        <source src="ASET/video.mp4" type="video/mp4" />
+        Browser Anda tidak mendukung video.
+      </video>
+    </div>
+  </div>
+
+  <footer>
+    <p>🌐 Dibuat dengan ❤️ oleh Kamu - 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
